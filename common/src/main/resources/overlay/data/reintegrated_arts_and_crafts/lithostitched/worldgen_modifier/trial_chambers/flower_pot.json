@@ -1,0 +1,9 @@
+{
+  "type": "lithostitched:set_pool_element_processors",
+  "template_pools": "minecraft:trial_chambers/decor",
+  "locations": [
+    "minecraft:trial_chambers/decor/empty_pot",
+    "minecraft:trial_chambers/decor/dead_bush_pot"
+  ],
+  "processor_list": "reintegrated_arts_and_crafts:trial_chambers/flower_pot"
+}

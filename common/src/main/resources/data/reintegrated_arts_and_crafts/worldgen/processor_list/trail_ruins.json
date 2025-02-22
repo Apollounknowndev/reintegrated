@@ -1,0 +1,42 @@
+{
+  "processors": [
+    {
+      "processor_type": "lithostitched:condition",
+      "if_true": {
+        "type": "lithostitched:random_chance",
+        "chance": 0.5
+      },
+      "then": {
+        "processor_type": "lithostitched:block_swap",
+        "blocks": {
+          "minecraft:red_terracotta": "arts_and_crafts:red_mud_bricks",
+          "minecraft:orange_terracotta": "arts_and_crafts:orange_mud_bricks",
+          "minecraft:yellow_terracotta": "arts_and_crafts:yellow_mud_bricks"
+        }
+      }
+    },
+    {
+      "processor_type": "lithostitched:condition",
+      "random_mode": "per_piece",
+      "if_true": [
+        {
+          "type": "lithostitched:random_chance",
+          "chance": 0.4
+        },
+        {
+          "type": "lithostitched:matching_blocks",
+          "blocks": "minecraft:orange_glazed_terracotta"
+        }
+      ],
+      "then": {
+        "processor_type": "lithostitched:set_block",
+        "state_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "arts_and_crafts:glazed_terracotta"
+          }
+        }
+      }
+    }
+  ]
+}

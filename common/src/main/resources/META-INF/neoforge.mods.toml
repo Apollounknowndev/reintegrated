@@ -1,0 +1,19 @@
+modLoader = "lowcodefml"
+loaderVersion = "[1,)"
+issueTrackerURL = "https://github.com/Apollounknowndev/reintegrated/issues"
+license = "MIT"
+
+[[mods]]
+modId = "reintegrated_${dependent_suffix}"
+version = "${version}"
+displayName = "Reintegrated ${dependent_name}"
+logoFile = "assets/reintegrated_${dependent_suffix}/icon.png"
+authors = "Apollo"
+description = '''Integrating ${dependent_name} into vanilla biomes and structures.'''
+
+[[dependencies.reintegrated_${dependent_suffix}]]
+modId = "${dependent_id}"
+type = "required"
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"

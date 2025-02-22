@@ -1,0 +1,59 @@
+{
+  "processors": [
+    {
+      "processor_type": "lithostitched:apply_random",
+      "mode": "per_block",
+      "processor_lists": [
+        {
+          "weight": 2,
+          "data": "minecraft:empty"
+        },
+        {
+          "weight": 1,
+          "data": {
+            "processors": [
+              {
+                "processor_type": "lithostitched:block_swap",
+                "blocks": {
+                  "minecraft:flower_pot": "arts_and_crafts:lime_flower_pot",
+                  "minecraft:potted_cactus": "arts_and_crafts:lime_potted_cactus",
+                  "minecraft:potted_dead_bush": "arts_and_crafts:lime_potted_dead_bush"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "processors": [
+              {
+                "processor_type": "lithostitched:block_swap",
+                "blocks": {
+                  "minecraft:flower_pot": "arts_and_crafts:green_flower_pot",
+                  "minecraft:potted_cactus": "arts_and_crafts:green_potted_cactus",
+                  "minecraft:potted_dead_bush": "arts_and_crafts:green_potted_dead_bush"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "weight": 1,
+          "data": {
+            "processors": [
+              {
+                "processor_type": "lithostitched:block_swap",
+                "blocks": {
+                  "minecraft:flower_pot": "arts_and_crafts:cyan_flower_pot",
+                  "minecraft:potted_cactus": "arts_and_crafts:cyan_potted_cactus",
+                  "minecraft:potted_dead_bush": "arts_and_crafts:cyan_potted_dead_bush"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

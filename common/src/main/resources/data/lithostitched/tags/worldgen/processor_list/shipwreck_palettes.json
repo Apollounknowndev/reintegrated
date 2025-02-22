@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "reintegrated_arts_and_crafts:shipwreck/dark_oak_and_cork",
+      "required": false
+    },
+    {
+      "id": "reintegrated_arts_and_crafts:shipwreck/spruce_and_cork",
+      "required": false
+    }
+  ]
+}

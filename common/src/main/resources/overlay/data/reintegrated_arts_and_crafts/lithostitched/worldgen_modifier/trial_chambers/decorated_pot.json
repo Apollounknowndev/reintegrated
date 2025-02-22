@@ -1,0 +1,11 @@
+{
+  "type": "lithostitched:set_pool_element_processors",
+  "template_pools": "minecraft:trial_chambers/decor",
+  "locations": [
+    "minecraft:trial_chambers/decor/undecorated_pot",
+    "minecraft:trial_chambers/decor/flow_pot",
+    "minecraft:trial_chambers/decor/guster_pot",
+    "minecraft:trial_chambers/decor/scrape_pot"
+  ],
+  "processor_list": "reintegrated_arts_and_crafts:trial_chambers/decorated_pot"
+}

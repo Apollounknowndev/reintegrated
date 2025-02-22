@@ -1,0 +1,31 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "minecraft:chests/simple_dungeon"
+        }
+      ],
+      "rolls": 1
+    },
+    {
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "count": {
+                "min": 4,
+                "max": 12
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "arts_and_crafts:gypsum"
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

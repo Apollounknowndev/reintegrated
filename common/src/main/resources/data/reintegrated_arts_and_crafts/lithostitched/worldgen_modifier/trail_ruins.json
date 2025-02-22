@@ -1,0 +1,13 @@
+{
+  "type": "lithostitched:add_processor_list_processors",
+  "processor_lists": [
+    "minecraft:trail_ruins_houses_archaeology",
+    "minecraft:trail_ruins_tower_top_archaeology"
+  ],
+  "processors": [
+    {
+      "processor_lists": "reintegrated_arts_and_crafts:trail_ruins",
+      "processor_type": "lithostitched:reference"
+    }
+  ]
+}

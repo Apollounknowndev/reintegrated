@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'idea'
+    id 'maven-publish'
+    id "me.modmuss50.mod-publish-plugin" version "0.5.1"
+}
+
+jar {
+    include '**/data/minecraft/**'
+}
+
+publishMods {
+    file = jar.archiveFile
+    changelog = "This is a test."
+    type = STABLE
+    modLoaders.add("fabric")
+    modLoaders.add("forge")
+    //modLoaders.add("neoforge")
+    displayName = "v%s".formatted(project.version)
+
+    dryRun = true
+
+    modrinth {
+        accessToken = providers.environmentVariable("TOKEN_MR")
+        projectId = "dOZZvZXY"
+
+        minecraftVersions.add("1.20.1")
+        minecraftVersions.add("1.21.1")
+
+        requires {
+            slug = project.dependent_slug
+        }
+    }
+
+    /*curseforge {
+        accessToken = providers.environmentVariable("TOKEN_CF")
+        projectId = "834329"
+
+        minecraftVersions.add("1.20.1")
+
+        requires("fabric-api")
+    }*/
+}

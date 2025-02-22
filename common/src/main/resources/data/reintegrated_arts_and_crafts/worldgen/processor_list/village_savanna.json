@@ -1,0 +1,20 @@
+{
+  "processors": [
+    {
+      "processor_type": "lithostitched:condition",
+      "random_mode": "per_piece",
+      "if_true": {
+        "type": "lithostitched:random_chance",
+        "chance": 0.2
+      },
+      "then": {
+        "processor_type": "lithostitched:block_swap",
+        "blocks": {
+          "minecraft:acacia_door": "arts_and_crafts:cork_door",
+          "minecraft:acacia_fence": "arts_and_crafts:cork_fence",
+          "minecraft:acacia_pressure_plate": "arts_and_crafts:cork_pressure_plate"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "schemaVersion": 1,
+    "id": "reintegrated_${dependent_suffix}",
+    "version": "${version}",
+    "name": "Reintegrated ${dependent_name}",
+    "description": "Integrating ${dependent_name} into vanilla biomes and structures.",
+    "authors": [
+        "Apollo"
+    ],
+    "contact": {
+        "homepage": "https://modrinth.com/project/reintegrated_${dependent_suffix}",
+        "sources": "https://github.com/Apollounknowndev/reintegrated/"
+    },
+    "license": "MIT",
+    "icon": "assets/reintegrated_${dependent_suffix}/icon.png",
+    "environment": "*",
+    "depends": {
+        "${dependent_id}": "*",
+        "fabric-api": "*",
+        "lithostitched": ">=1.4",
+        "minecraft": ">=1.20"
+    }
+}
+  

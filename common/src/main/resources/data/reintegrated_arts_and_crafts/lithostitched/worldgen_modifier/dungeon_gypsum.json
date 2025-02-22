@@ -1,0 +1,6 @@
+{
+  "type": "lithostitched:add_features",
+  "biomes": "#arts_and_crafts:gypsum_can_generate_in",
+  "features": "reintegrated_arts_and_crafts:dungeon_gypsum",
+  "step": "underground_structures"
+}
